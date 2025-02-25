@@ -20,10 +20,10 @@ def main():
         img = tf.keras.utils.img_to_array(img)
         st.image(img)
 
-    model = tf.keras.models.load_model("ship_model.keras")
-    prediction = np.argmax(model.predict(img.reshape(1, *target_size, 3)))
-    prediction = train_categories[prediction]
-    st.write(f"Prediction: {prediction}")
+        model = tf.keras.models.load_model("ship_model.keras")
+        prediction = np.argmax(model.predict(img.reshape(1, *target_size, 3)))
+        prediction = train_categories[prediction]
+        st.write(f"Prediction: {prediction}")
 
 if __name__ == "__main__":
     main()
