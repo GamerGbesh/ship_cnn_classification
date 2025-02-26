@@ -4,3 +4,6 @@ train/images
 ship_model.keras
 logger.csv
 checkpoint.model.keras
+full.model.keras
+full_logger.csv
+full_ship_model.keras
